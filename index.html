@@ -175,10 +175,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>真是太有意思了！</p>
-        
-          <a class="article-more-a" href="/2019/07/22/上传本地资源至github/#more">more >></a>
-        
+        <p>1.拥有GitHub账号，若没有，点击 <a href="https://github.com" target="_blank" rel="noopener">https://github.com</a> 进入GitHub官网进行注册即可。</p>
+<p>2.安装好git bash，点击<a href="https://www.git-scm.com/download/" target="_blank" rel="noopener">https://www.git-scm.com/download/</a> 进入下载页面，下载好相应版本的安装包安装即可。</p>
+<p>3.打开<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a> 网站，登录刚才注册好的账号。点击最右侧  “+”  然后点击New repository，输入repository name：test（举例），勾选下方的Initialize this repository with a README ，最后点击create repository。此时仓库已经建好。</p>
+<p>4.点击菜单栏中的Setting，往下拉找到GitHub pages，将第一个下拉菜单的值none 改为master branch此时网页会自动刷新，再往下拉找到GitHub pages，多了一个网址，这个网址就是用来访问这个仓库资源的url。</p>
+<p>5.点击菜单栏中的code，回到仓库的首页。点击右侧的clone or download按钮，复制到那个路径备用。</p>
+<p>6.在电脑的某盘空白处点击鼠标右键，弹出菜单点击 git bash here。弹出界面后输入代码 mkdir test 回车（举例），再输入代码 cd test/  回车，进入到test文件夹  输入代码  git clone <a href="https://github.com/maerkefudingli/test.git" target="_blank" rel="noopener">https://github.com/maerkefudingli/test.git</a> 回车 (这个url是<a href="https://github.com/用户名/项目名.git" target="_blank" rel="noopener">https://github.com/用户名/项目名.git</a>) ,完成后将你要上传的项目或者资源拷贝到test文件夹最底层的readme.md同目录下。</p>
+<p>7.输入代码 cd test 回车，进入到建立的test文件夹下，再输入代码 git add . 回车，（别忘了.）,再输入git commit -m “提交信息”   回车,最后输入 git push -u origin master 回车(如果是首次上传项目到github要求你输入用户名和密码，按照提示语法格式输入即可)。以上步骤完成后回到github刷新，就可以看到你要上传的资源在你刚刚创建的仓库当中。</p>
+
       
 
       
@@ -205,7 +209,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/22/上传本地资源至github/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/07/22/上传本地资源至github/">评论 >></a>
         </p>
       
 
@@ -268,7 +272,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/21/我的主页/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/07/21/我的主页/">评论 >></a>
         </p>
       
 
