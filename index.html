@@ -182,7 +182,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>webpack的运行环境是node环境。所以<br>1.打开node官网<a href="http://nodejs.cn" target="_blank" rel="noopener">http://nodejs.cn</a>下载相应版本的node（version：10.16.0）安装包，按照系统提示一步一步安装即可。<br><br>2.接下来开始安装webpack 4+，所有命令在cmd中执行。window+R快捷键，打开cmd命令提示符<br><br><img src="/webpack/1.JPG" alt="&quot;命令提示符&quot;"><br><br>3.接下来举例说明，首先在桌面创建一个demo文件夹，cmd代码 cd Desktop\demo 回车进入到该文件夹下操作，输入代码 npm init -y回车，结束之后。输入代码 npm install -D webpack回车，进行webpack的局部安装。如图所示即安装成功。<br><br><img src="/webpack/2.JPG" alt="&quot;命令提示符&quot;"><br><br>4.输入 npm install -D webpack-cli 回车，如图所示安装成功。<br><br><img src="/webpack/3.JPG" alt="&quot;命令提示符&quot;"><br><br>5.在demo文件夹下创建三个文件夹分别叫src，out，config。src用于存放源码，out用于存放打包后的文件，config用于存放配置文件。然后在config文件夹下创建webpack.config.js文件，里面写入代码如图所示：<br><br><img src="/webpack/4.JPG" alt="&quot;命令提示符&quot;"><br><br>6.在src中放入源码文件如图：<br><br><img src="/webpack/5.JPG" alt="&quot;命令提示符&quot;"><br><br>7.打开cmd 输入 webpack –config config/webpack.config.js回车，如图所示则成功<br><br><img src="/webpack/6.JPG" alt="&quot;命令提示符&quot;"><br><br>out文件夹下多了index_js.js文件，如图<br><br><img src="/webpack/7.JPG" alt="&quot;命令提示符&quot;"><br><br>8.到这里单个的js文件打包压缩就结束了。为了以后操作方便，打开demo文件夹下的package.json文件添加如下代码：<br><br><img src="/webpack/8.JPG" alt="&quot;命令提示符&quot;"><br><br>之后就可以用npm run start 代替 webpack –config config/webpack.config.js<br><br>9.打包多个独立的js文件成独立的js文件，将webpack.config.js代码修改如下：<br><br><img src="/webpack/9.JPG" alt="&quot;命令提示符&quot;"><br><br>输入 npm run start回车，如图：<br><br><img src="/webpack/10.JPG" alt="&quot;命令提示符&quot;"><br><br>out文件夹下如图：<br><br><img src="/webpack/11.JPG" alt="&quot;命令提示符&quot;"><br><br>打包完成。<br><br>10.打包多个js文件成一个js文件，将webpack.config.js代码修改如下<br><br><img src="/webpack/12.JPG" alt="&quot;命令提示符&quot;"><br><br>输入npm run start回车,如图：<br><br><img src="/webpack/13.JPG" alt="&quot;命令提示符&quot;"><br><br>out文件夹下如图:<br><br><img src="/webpack/14.JPG" alt="&quot;命令提示符&quot;"><br><br>打包完成。</p>
+        <p>webpack的运行环境是node环境。所以<br>1.打开node官网<a href="http://nodejs.cn" target="_blank" rel="noopener">http://nodejs.cn</a>下载相应版本的node（version：10.16.0）安装包，按照系统提示一步一步安装即可。<br><br>2.接下来开始安装webpack 4+，所有命令在cmd中执行。window+R快捷键，打开cmd命令提示符<br><br><img src="/webpack/1.JPG" alt="&quot;命令提示符&quot;"><br><br>3.接下来举例说明，首先在桌面创建一个demo文件夹，cmd代码 cd Desktop\demo 回车进入到该文件夹下操作，输入代码 npm init -y回车，结束之后。输入代码 npm install -D webpack回车，进行webpack的局部安装。如图所示即安装成功。<br><br><img src="/webpack/2.JPG" alt="&quot;命令提示符&quot;"><br><br>4.输入 npm install -D webpack-cli 回车，如图所示安装成功。<br><br><img src="/webpack/3.JPG" alt="&quot;命令提示符&quot;"><br><br>5.在demo文件夹下创建三个文件夹分别叫src，out，config。src用于存放源码，out用于存放打包后的文件，config用于存放配置文件。然后在config文件夹下创建webpack.config.js文件，里面写入代码如图所示：（dirname前有两个下划线）<br><br><img src="/webpack/4.JPG" alt="&quot;命令提示符&quot;"><br><br>6.在src中放入源码文件如图：<br><br><img src="/webpack/5.JPG" alt="&quot;命令提示符&quot;"><br><br>7.打开cmd 输入 webpack –config config/webpack.config.js回车，如图所示则成功<br><br><img src="/webpack/6.JPG" alt="&quot;命令提示符&quot;"><br><br>out文件夹下多了index_js.js文件，如图<br><br><img src="/webpack/7.JPG" alt="&quot;命令提示符&quot;"><br><br>8.到这里单个的js文件打包压缩就结束了。为了以后操作方便，打开demo文件夹下的package.json文件添加如下代码：<br><br><img src="/webpack/8.JPG" alt="&quot;命令提示符&quot;"><br><br>之后就可以用npm run start 代替 webpack –config config/webpack.config.js<br><br>9.打包多个独立的js文件成独立的js文件，将webpack.config.js代码修改如下：<br><br><img src="/webpack/9.JPG" alt="&quot;命令提示符&quot;"><br><br>输入 npm run start回车，如图：<br><br><img src="/webpack/10.JPG" alt="&quot;命令提示符&quot;"><br><br>out文件夹下如图：<br><br><img src="/webpack/11.JPG" alt="&quot;命令提示符&quot;"><br><br>打包完成。<br><br>10.打包多个js文件成一个js文件，将webpack.config.js代码修改如下<br><br><img src="/webpack/12.JPG" alt="&quot;命令提示符&quot;"><br><br>输入npm run start回车,如图：<br><br><img src="/webpack/13.JPG" alt="&quot;命令提示符&quot;"><br><br>out文件夹下如图:<br><br><img src="/webpack/14.JPG" alt="&quot;命令提示符&quot;"><br><br>打包完成。</p>
 
       
 
@@ -191,6 +191,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js打包</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -541,6 +556,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js打包</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">部署</a>
